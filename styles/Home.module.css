@@ -7,6 +7,30 @@
   min-height: 100vh;
 }
 
+#footemp {
+  color: red;
+
+}
+
+.txtbx {
+  padding: 0.1rem;
+  margin: 0 0.5rem;
+  width: 12rem;
+
+}
+
+.logbtn {
+  padding: 0.2rem;
+
+}
+
+.logbtn:hover {
+  background: red;
+  cursor:pointer;
+
+}
+
+
 .description {
   display: inherit;
   justify-content: inherit;
