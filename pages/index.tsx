@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import BackGround from './bg.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,23 +18,27 @@ export default function Home() {
       <header>
         <nav>
           <img />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="textbox" name='email' className={styles.txtbx}></input>
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" name='password' className={styles.txtbx}></input>  
           <button type="button" className={styles.logbtn}>Login</button>
           
         </nav>
       </header>
 
+
       <main className={styles.main}>
-        
+
+      <div className={styles.bg}>
+        <BackGround />
+      </div>
         
       </main>
 
       <footer className={styles.footer}>
         <p>
-          Designed with <span id={styles.footemp}>love</span> by Pradeep Mondal
+          Developed with <span id={styles.footemp}>love</span> by Pradeep Mondal
         </p>
 
       </footer>

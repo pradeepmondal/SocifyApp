@@ -101,8 +101,8 @@ nav a {
 }
 
 body {
-  color: black;
-  background-image: url("./images/bg.gif");
+  color: white;
+  /* background-image: url("./images/bg.gif"); */
   background-size:90rem 65rem;
   background-position: 0rem -5rem;
   height: 100vh;
