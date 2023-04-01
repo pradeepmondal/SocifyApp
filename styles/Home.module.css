@@ -38,6 +38,28 @@
 
 }
 
+.signUpPageBtn {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  align-items: center;
+  
+
+
+
+}
+
+.signUpPageBtnGoogle:hover {
+  animation: hoverBtn-animation-google 0.3s ease-in-out forwards;
+  cursor: pointer;
+}
+
+.signUpPageBtnGitHub:hover {
+  animation: hoverBtn-animation-github 0.3s ease-in-out forwards;
+  cursor: pointer;
+}
+
 .signUp button {
   font-size: 1rem;
   display:block;
@@ -46,7 +68,9 @@
   border-radius: 5px;
 }
 
-.signUp button:hover {
+
+
+.hover:hover {
   background-color: rgba(103, 104, 124, 0.852);
   font-size: 1rem;
   display:block;
@@ -87,6 +111,38 @@
   }
   
 }
+
+@keyframes hoverBtn-animation-google {
+  from {
+    background-color: rgba(103, 104, 124, 0.852);
+
+  }
+
+  to {
+    background-color: #097614e9
+  }
+  
+}
+
+@keyframes hoverBtn-animation-github {
+  from {
+    background-color: rgba(103, 104, 124, 0.852);
+
+  }
+
+  to {
+    background-color: #575af8e9
+  }
+  
+}
+
+.pageHeading {
+  padding-top: 5rem;
+  text-align: center;
+
+}
+
+
 
 .main {
   display: flex;
