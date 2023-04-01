@@ -30,8 +30,33 @@
 
 }
 
-.hoverText {
+.signUp {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px;
+
+
 }
+
+.signUp button {
+  font-size: 1rem;
+  display:block;
+  margin: 0.4rem auto;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.signUp button:hover {
+  background-color: rgba(103, 104, 124, 0.852);
+  font-size: 1rem;
+  display:block;
+  margin: 0.4rem auto;
+  padding: 0.2rem;
+  border-radius: 5px;
+  animation: hoverBtn-animation 0.3s ease-in-out forwards;
+  cursor: pointer;
+}
+
 
 .hoverText:hover {
   animation:  hoverText-animation 0.5s ease-in-out forwards;
@@ -47,6 +72,18 @@
 
   to {
     color: #0dd3e9e3
+  }
+  
+}
+
+@keyframes hoverBtn-animation {
+  from {
+    background-color: rgba(103, 104, 124, 0.852);
+
+  }
+
+  to {
+    background-color: #df4c2be9
   }
   
 }

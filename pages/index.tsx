@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import BackGround from './bg.js'
+import BackGround from './landingPageComp/bg.js'
+import SignUp from './landingPageComp/signUp.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function Home() {
       <div className={styles.bg}>
         <BackGround />
       </div>
+      <SignUp />
         
       </main>
 
