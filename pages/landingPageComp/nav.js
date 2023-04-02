@@ -1,5 +1,6 @@
 import styles from '../../styles/Home.module.css';
 import React, { useState } from 'react';
+import { FaGoogle, FaGithub } from 'react-icons/fa';
 
 const Nav = ()=>{
 
@@ -15,12 +16,18 @@ const Nav = ()=>{
     return (
         <nav>
           <img />
-          <button type="button" className={!(active)?[styles.logbtn]:styles.disNone} onClick={logClick}>Login</button> 
-          <label htmlFor="email" className={active?styles.disYes:styles.disNone}>Email</label>
-          <input type="textbox" name='email' className={active?[styles.txtbx, styles.disYes]:styles.disNone}></input>
-          <label htmlFor="password" className={active?styles.disYes:styles.disNone}>Password</label>
-          <input type="password" name='password' className={active?[styles.txtbx, styles.disYes]:styles.disNone}></input>  
-          <button type="button" className={active?[styles.logbtn]:styles.disNone}>Login</button>  
+          {!active?<button type="button" className={styles.logbtn} onClick={logClick}>Login</button>:null}
+          {active?<span className={[styles.logicon]}>
+            <a href='#'><button name='signUpWithGoogle' className={styles.signUpPageBtnGoogle}><FaGoogle /></button></a>
+            <a href='#'><button name='signUpWithGithub' className={styles.signUpPageBtnGitHub}><FaGithub /></button></a>
+            </span>:null} 
+          {active?<label htmlFor="email" >Email</label>:null}
+          {active?<input type="textbox" name='email' className={styles.txtbx}></input>:null}
+          {active?<label htmlFor="password">Password</label>:null}
+          {active?<input type="password" name='password' className={styles.txtbx}></input>:null}  
+          {active?<button type="button" className={styles.logbtn}>Login</button>:null}
+          
+          
         </nav>
     )
 }
