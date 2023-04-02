@@ -1,9 +1,9 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { FaFacebook, FaGithub, FaGoogle, FaKeyboard } from 'react-icons/fa';
 
-const SignUp = () => {
+const SignUpOpts = () => {
     return (
-        <div >
+        <div className={styles.signUp}>
             <h1 className={styles.pageHeading}>
                 We have got few options for you, choose anyone 
             </h1>
@@ -19,4 +19,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp;
+export default SignUpOpts;

@@ -31,9 +31,12 @@
 }
 
 .signUp {
+  width:100vh;
+  display: block;
   font-size: 1.5rem;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 
 
 }
@@ -61,6 +64,7 @@
 }
 
 .signUp button {
+  display: flex;
   font-size: 1rem;
   display:block;
   margin: 0.4rem auto;
@@ -136,13 +140,20 @@
   
 }
 
-.pageHeading {
-  padding-top: 5rem;
+/* .pageHeading {
+  display: flex;
   text-align: center;
 
+} */
+
+.disYes {
 }
 
+.disNone {
+  display: none;
 
+
+}
 
 .main {
   display: flex;
