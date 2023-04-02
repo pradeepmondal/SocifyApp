@@ -41,6 +41,26 @@
 
 }
 
+.logicon {
+  display:inline-block;
+  height: unset;
+  margin: 0 auto;
+  align-items: right;
+  padding: 0 0.8rem;
+ 
+
+
+}
+
+.logicon button{
+  align-items: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: -5px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
 .signUpPageBtn {
   font-size: 1.5rem;
   margin: 10px;
